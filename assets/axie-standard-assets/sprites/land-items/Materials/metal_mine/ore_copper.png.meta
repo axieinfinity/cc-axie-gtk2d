@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "106fe610-f167-4aa9-bc7b-c3cd9514bbce",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "106fe610-f167-4aa9-bc7b-c3cd9514bbce@6c48a",
+      "displayName": "ore_copper",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "106fe610-f167-4aa9-bc7b-c3cd9514bbce",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "106fe610-f167-4aa9-bc7b-c3cd9514bbce@f9941",
+      "displayName": "ore_copper",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -0.5,
+        "offsetY": 0,
+        "trimX": 3,
+        "trimY": 41,
+        "width": 505,
+        "height": 430,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -252.5,
+            -215,
+            0,
+            252.5,
+            -215,
+            0,
+            -252.5,
+            215,
+            0,
+            252.5,
+            215,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            3,
+            471,
+            508,
+            471,
+            3,
+            41,
+            508,
+            41
+          ],
+          "nuv": [
+            0.005859375,
+            0.080078125,
+            0.9921875,
+            0.080078125,
+            0.005859375,
+            0.919921875,
+            0.9921875,
+            0.919921875
+          ],
+          "minPos": [
+            -252.5,
+            -215,
+            0
+          ],
+          "maxPos": [
+            252.5,
+            215,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "106fe610-f167-4aa9-bc7b-c3cd9514bbce@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "106fe610-f167-4aa9-bc7b-c3cd9514bbce@f9941"
+  }
+}

@@ -1,0 +1,107 @@
+// Copyright (c) 2017-2020 Xiamen Yaji Software Co., Ltd.
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: my-sprite-vs:vert
+      frag: my-sprite-fs:frag
+      depthStencilState:
+        depthTest: false
+        depthWrite: false
+      blendState:
+        targets:
+        - blend: true
+          blendSrc: one
+          blendDst: one_minus_src_alpha
+          blendSrcAlpha: one
+          blendDstAlpha: one_minus_src_alpha
+      rasterizerState:
+        cullMode: none
+      properties:
+        mainTex:    { value: white }
+        lineTex:    { value: white }
+        splat0Tex:    { value: white }
+        splat1Tex:    { value: white }
+        swapTex:    { value: white }
+        alphaThreshold: { value: 0.5 }
+}%
+
+CCProgram my-sprite-vs %{
+  precision highp float;
+  #include <builtin/uniforms/cc-global>
+  #if USE_LOCAL
+    #include <builtin/uniforms/cc-local>
+  #endif
+
+  in vec3 a_position;
+  in vec2 a_texCoord;
+  in vec4 a_color;
+
+  out vec2 uv0;
+  out vec4 color0;
+
+  vec4 vert () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if USE_LOCAL
+      pos = cc_matWorld * pos;
+    #endif
+
+    pos = cc_matViewProj * pos;
+
+    uv0 = a_texCoord;
+
+    color0 = a_color;
+
+    return pos;
+  }
+}%
+
+CCProgram my-sprite-fs %{
+  precision highp float;
+  #include <builtin/internal/alpha-test>
+
+  in vec2 uv0;
+  in vec4 color0;
+  #pragma builtin(local)
+  layout(set = 2, binding = 12) uniform sampler2D cc_spriteTexture;
+  uniform sampler2D mainTex;
+  uniform sampler2D lineTex;
+  uniform sampler2D splat0Tex;
+  uniform sampler2D splat1Tex;
+  uniform sampler2D swapTex;
+
+  vec4 frag () {
+    float variant = color0.x;
+    vec4 dstColor1 = texture(swapTex, vec2(variant, 0.0 / 8.0 + color0.y * 256.0 / 8.0));
+    vec4 dstColor2 = texture(swapTex, vec2(variant, 1.0 / 8.0 + color0.y * 256.0 / 8.0));
+    vec4 dstColor3 = texture(swapTex, vec2(variant, 2.0 / 8.0));
+    vec4 dstColor4 = texture(swapTex, vec2(variant, 3.0 / 8.0));
+    vec4 dstColor5 = texture(swapTex, vec2(variant, 4.0 / 8.0));
+
+    vec4 mainColor = texture(mainTex, uv0);
+    vec4 lineColor = texture(lineTex, uv0);
+    vec3 splat0Color = texture(splat0Tex, uv0).xyz;
+    vec3 splat1Color = texture(splat1Tex, uv0).xyz;
+
+    vec3 color = vec3(0, 0, 0);
+    float mainBackColorA = mainColor.w * splat0Color.z;
+    float mainColorA = mainColor.w * (1.0 - splat0Color.z);
+
+    color = color * (1.0 - mainBackColorA) + mainColor.xyz * mainBackColorA;
+    color = color * (1.0 - splat0Color.x) + dstColor1.xyz * splat0Color.x;
+    color = color * (1.0 - splat0Color.y) + dstColor2.xyz * splat0Color.y;
+    color = color * (1.0 - splat1Color.z) + dstColor4.xyz * splat1Color.z;
+    color = color * (1.0 - splat1Color.y) + dstColor3.xyz * splat1Color.y;
+    color = color * (1.0 - splat1Color.x) + dstColor4.xyz * splat1Color.x;
+    color = color * (1.0 - mainColorA) + mainColor.xyz * mainColorA * color0.w;
+    color = color * (1.0 - lineColor.w) + lineColor.xyz * dstColor5.xyz * lineColor.w;
+    
+    vec4 o = vec4(0, 0, 0, 0);
+    o.xyz = color;
+    o.w = clamp(mainBackColorA + splat0Color.x + splat0Color.y + splat1Color.y + splat1Color.z + splat1Color.x + mainColorA + lineColor.w, 0.0, 1.0) * color0.w;
+  
+    // o.xyz = dstColor1.xyz;
+    ALPHA_TEST(o);
+    return o;
+  }
+}%

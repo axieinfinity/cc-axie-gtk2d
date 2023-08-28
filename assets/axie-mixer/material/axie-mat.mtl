@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.Material",
+  "_name": "",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "a0881788-bd15-42e9-ad7c-06e6ebb5a547",
+    "__expectedType__": "cc.EffectAsset"
+  },
+  "_techIdx": 0,
+  "_defines": [
+    {}
+  ],
+  "_states": [
+    {
+      "rasterizerState": {},
+      "depthStencilState": {},
+      "blendState": {
+        "targets": [
+          {}
+        ]
+      }
+    }
+  ],
+  "_props": [
+    {
+      "mainTex": {
+        "__uuid__": "14da752f-8ed2-4552-a225-6a508d77af4e@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "lineTex": {
+        "__uuid__": "90c348e6-3d6d-407d-ac54-b3e4e58e698b@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "splat0Tex": {
+        "__uuid__": "06499ad8-0b74-4e5d-8003-06c470c20cfb@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "splat1Tex": {
+        "__uuid__": "92bd89cc-52fb-4909-b4b5-f2a666c72468@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      },
+      "swapTex": {
+        "__uuid__": "8c21191c-11d6-4fbe-9b4e-ff8bbfe60f7f@6c48a",
+        "__expectedType__": "cc.Texture2D"
+      }
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+    "skeleton": {
+      "spine": "3.8.79"
+    },
+    "bones": [
+      {
+        "name": "@root"
+      },
+      {
+        "name": "@pivot-main",
+        "parent": "@root"
+      },
+      {
+        "name": "@pivot-back",
+        "parent": "@pivot-main",
+        "x": 232,
+        "y": 264.98,
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@pivot-center",
+        "parent": "@pivot-back",
+        "x": -243,
+        "y": -5.25,
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@axie",
+        "parent": "@pivot-center",
+        "length": 213.28,
+        "rotation": 179.04,
+        "x": 224.28,
+        "y": 5.16
+      },
+      {
+        "name": "@back",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 65.14,
+        "y": -230.05
+      },
+      {
+        "name": "@body",
+        "parent": "@axie",
+        "length": 226.28,
+        "rotation": -8.35,
+        "x": 224.58,
+        "y": -0.53
+      },
+      {
+        "name": "@ear-left",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 135.95,
+        "y": -217.87
+      },
+      {
+        "name": "@ear-right",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 467.52,
+        "y": -249.32
+      },
+      {
+        "name": "@eyes",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 423.48,
+        "y": -128.03
+      },
+      {
+        "name": "@horn",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 373.17,
+        "y": -228.89
+      },
+      {
+        "name": "@leg-back-left",
+        "parent": "@axie",
+        "length": 82.39,
+        "rotation": 99.1,
+        "x": -7.41,
+        "y": 183.62,
+        "transform": "noScale"
+      },
+      {
+        "name": "@leg-front-left",
+        "parent": "@axie",
+        "length": 87.35,
+        "rotation": 89.4,
+        "x": 146.09,
+        "y": 187.6,
+        "transform": "noScale"
+      },
+      {
+        "name": "@leg-front-right",
+        "parent": "@axie",
+        "length": 90.99,
+        "rotation": 75.06,
+        "x": 455.08,
+        "y": 185.83,
+        "transform": "noScale"
+      },
+      {
+        "name": "@mouth",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": 421.46,
+        "y": -8.05
+      },
+      {
+        "name": "back",
+        "parent": "@back",
+        "length": 149.41,
+        "rotation": 58,
+        "x": -13.97,
+        "y": 26.3,
+        "transform": "noScale"
+      },
+      {
+        "name": "horn",
+        "parent": "@horn",
+        "length": 176.72,
+        "rotation": 90,
+        "y": 18,
+        "transform": "noScale"
+      },
+      {
+        "name": "ear-left",
+        "parent": "@ear-left",
+        "length": 113.61,
+        "rotation": 35,
+        "x": -7,
+        "y": -65,
+        "transform": "noScale"
+      },
+      {
+        "name": "ear-right",
+        "parent": "@ear-right",
+        "length": 119.39,
+        "rotation": 135,
+        "x": -33,
+        "y": -107,
+        "transform": "noScale"
+      },
+      {
+        "name": "body-pattern",
+        "parent": "@body",
+        "rotation": -170.69,
+        "x": -287.64,
+        "y": -107.32,
+        "transform": "noScale"
+      },
+      {
+        "name": "@shadow",
+        "parent": "@root",
+        "color": "e6d713ff"
+      },
+      {
+        "name": "@tail",
+        "parent": "@axie",
+        "rotation": -179.04,
+        "x": -38.64,
+        "y": 114.26
+      },
+      {
+        "name": "leg-front-right-IK",
+        "parent": "@pivot-main",
+        "x": -263.59,
+        "y": -3.12,
+        "transform": "noScale",
+        "color": "ff3f00ff"
+      },
+      {
+        "name": "leg-front-left-IK",
+        "parent": "@pivot-main",
+        "x": 73.81,
+        "y": -7.07,
+        "transform": "noScale",
+        "color": "ff3f00ff"
+      },
+      {
+        "name": "leg-back-left-IK",
+        "parent": "@pivot-main",
+        "x": 246.97,
+        "y": 2.5,
+        "transform": "noScale",
+        "color": "ff3f00ff"
+      },
+      {
+        "name": "@ball",
+        "parent": "@root",
+        "y": 191,
+        "color": "f3981bff"
+      },
+      {
+        "name": "ball",
+        "parent": "@ball",
+        "y": -191,
+        "color": "f4a729ff"
+      },
+      {
+        "name": "@body-neck",
+        "parent": "@pivot-center",
+        "x": -161.89,
+        "y": -53.75,
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@body-ground",
+        "parent": "@pivot-main",
+        "x": 220,
+        "transform": "noRotationOrReflection",
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@body-hip",
+        "parent": "@pivot-center",
+        "x": 240.11,
+        "y": 55.25,
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@body-air",
+        "parent": "@pivot-back",
+        "x": 63,
+        "y": 365,
+        "transform": "noRotationOrReflection",
+        "color": "ff0101ff"
+      },
+      {
+        "name": "@body-cheek",
+        "parent": "@pivot-center",
+        "x": 15.11,
+        "y": 47.25,
+        "color": "ff0101ff"
+      },
+      {
+        "name": "tail",
+        "parent": "@tail",
+        "length": 203.67,
+        "rotation": -42,
+        "x": 39,
+        "y": 92,
+        "transform": "noScale"
+      }
+    ],
+    "slots": [
+      {
+        "name": "shadow",
+        "bone": "@shadow",
+        "attachment": "shadow"
+      },
+      {
+        "name": "ball",
+        "bone": "ball"
+      },
+      {
+        "name": "leg-front-right",
+        "bone": "@leg-front-right",
+        "attachment": "sumo-leg-front-right"
+      },
+      {
+        "name": "back",
+        "bone": "back",
+        "attachment": "back"
+      },
+      {
+        "name": "ear-right",
+        "bone": "ear-right",
+        "attachment": "ear-right"
+      },
+      {
+        "name": "tail",
+        "bone": "tail",
+        "attachment": "tail"
+      },
+      {
+        "name": "body",
+        "bone": "@body",
+        "attachment": "body-sumo"
+      },
+      {
+        "name": "body-pattern",
+        "bone": "body-pattern",
+        "attachment": "body-pattern"
+      },
+      {
+        "name": "leg-back-left",
+        "bone": "@leg-back-left",
+        "attachment": "sumo-leg-back-left"
+      },
+      {
+        "name": "leg-front-left",
+        "bone": "@leg-front-left",
+        "attachment": "sumo-leg-front-left"
+      },
+      {
+        "name": "body-hip",
+        "bone": "@body-hip",
+        "attachment": "body-hip"
+      },
+      {
+        "name": "body-neck",
+        "bone": "@body-neck",
+        "attachment": "body-neck"
+      },
+      {
+        "name": "eyes",
+        "bone": "@eyes",
+        "attachment": "eyes"
+      },
+      {
+        "name": "mouth",
+        "bone": "@mouth",
+        "attachment": "mouth"
+      },
+      {
+        "name": "horn",
+        "bone": "horn",
+        "attachment": "horn"
+      },
+      {
+        "name": "ear-left",
+        "bone": "ear-left",
+        "attachment": "ear-left"
+      },
+      {
+        "name": "body-air",
+        "bone": "@body-air",
+        "attachment": "body-air"
+      },
+      {
+        "name": "body-cheek",
+        "bone": "@body-cheek",
+        "attachment": "body-cheek"
+      },
+      {
+        "name": "body-ground",
+        "bone": "@body-ground",
+        "attachment": "body-ground"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "shadow": {
+            "shadow": {
+              "width": 1049,
+              "height": 211,
+              "path": "body-sumo.shadow"
+            }
+          },
+          "ball": {
+            "ball": {
+              "y": 191,
+              "width": 393,
+              "height": 390,
+              "path": "body-normal.ball"
+            }
+          },
+          "leg-front-right": {
+            "sumo-leg-front-right": {
+              "x": 42.24,
+              "y": 7.63,
+              "rotation": 101.78,
+              "width": 112,
+              "height": 101,
+              "path": "body-normal.sumo-leg-front-right"
+            },
+            "sumo-leg-front-right-long": {
+              "x": 39.97,
+              "y": -2.03,
+              "rotation": 219.78,
+              "width": 111,
+              "height": 114,
+              "path": "body-normal.sumo-leg-front-right-long"
+            },
+            "sumo-leg-front-right-stretch": {
+              "x": 44.29,
+              "y": 3.3,
+              "rotation": 137.24,
+              "width": 106,
+              "height": 103,
+              "path": "body-normal.sumo-leg-front-right-stretch"
+            }
+          },
+          "back": {
+            "back": {
+              "x": 109.94,
+              "y": 18.25,
+              "rotation": -58,
+              "width": 285,
+              "height": 363,
+              "path": "summer-ta.back"
+            }
+          },
+          "ear-right": {
+            "ear-right": {
+              "x": 40.4,
+              "y": 1.29,
+              "rotation": -135,
+              "width": 139,
+              "height": 147,
+              "path": "aquatic-06.ear-right"
+            }
+          },
+          "tail": {
+            "tail": {
+              "x": 90.11,
+              "y": 1.61,
+              "rotation": 42,
+              "width": 200,
+              "height": 198,
+              "path": "bug-02.tail"
+            }
+          },
+          "body": {
+            "body-sumo": {
+              "x": 15.71,
+              "y": -32.51,
+              "rotation": -170.69,
+              "width": 789,
+              "height": 623,
+              "path": "body-sumo.body-sumo"
+            }
+          },
+          "body-pattern": {
+            "body-pattern": {
+              "x": -41.42,
+              "y": -23.57,
+              "width": 175,
+              "height": 257,
+              "path": "body-sumo.body-pattern"
+            }
+          },
+          "leg-back-left": {
+            "sumo-leg-back-left": {
+              "x": 35.48,
+              "y": -3.22,
+              "rotation": 69.54,
+              "width": 104,
+              "height": 95,
+              "path": "body-normal.sumo-leg-back-left"
+            },
+            "sumo-leg-back-left-long": {
+              "x": 34.3,
+              "y": 2.31,
+              "rotation": 216.69,
+              "width": 101,
+              "height": 112,
+              "path": "body-normal.sumo-leg-back-left-long"
+            },
+            "sumo-leg-back-left-stretch": {
+              "x": 34.53,
+              "y": 4.56,
+              "rotation": 37.34,
+              "width": 102,
+              "height": 105,
+              "path": "body-normal.sumo-leg-back-left-stretch"
+            }
+          },
+          "leg-front-left": {
+            "sumo-leg-front-left": {
+              "x": 39.53,
+              "y": -6.01,
+              "rotation": 83.6,
+              "width": 111,
+              "height": 101,
+              "path": "body-normal.sumo-leg-front-left"
+            },
+            "sumo-leg-front-left-long": {
+              "x": 44.5,
+              "y": 1.43,
+              "rotation": 221.6,
+              "width": 111,
+              "height": 114,
+              "path": "body-normal.sumo-leg-front-left-long"
+            },
+            "sumo-leg-front-left-stretch": {
+              "x": 35.38,
+              "y": -0.11,
+              "rotation": 151.6,
+              "width": 112,
+              "height": 104,
+              "path": "body-normal.sumo-leg-front-left-stretch"
+            }
+          },
+          "eyes": {
+            "eyes": {
+              "x": 25.6,
+              "y": -4,
+              "width": 257,
+              "height": 114,
+              "path": "bird-10.eyes"
+            },
+            "eyes-angry": {
+              "x": 44.6,
+              "y": 7.5,
+              "width": 295,
+              "height": 137,
+              "path": "bird-10.eyes-angry"
+            },
+            "eyes-happy": {
+              "x": 25.6,
+              "y": 4.5,
+              "width": 257,
+              "height": 131,
+              "path": "bird-10.eyes-happy"
+            },
+            "eyes-shut": {
+              "x": 25.6,
+              "y": -4,
+              "width": 257,
+              "height": 114,
+              "path": "bird-10.eyes-shut"
+            }
+          },
+          "mouth": {
+            "mouth": {
+              "x": 14.33,
+              "y": 61.96,
+              "width": 94,
+              "height": 17,
+              "path": "plant-02.mouth"
+            },
+            "mouth-bite": {
+              "x": 16.33,
+              "y": 45.46,
+              "width": 204,
+              "height": 76,
+              "path": "plant-02.mouth-bite"
+            },
+            "mouth-open": {
+              "x": 22.83,
+              "y": 34.46,
+              "width": 107,
+              "height": 128,
+              "path": "plant-02.mouth-open"
+            },
+            "mouth-smile": {
+              "x": 20.83,
+              "y": 57.96,
+              "width": 91,
+              "height": 41,
+              "path": "plant-02.mouth-smile"
+            }
+          },
+          "horn": {
+            "horn": {
+              "x": 67.48,
+              "y": -30.66,
+              "rotation": -90,
+              "width": 242,
+              "height": 186,
+              "path": "bird-02.horn"
+            }
+          },
+          "ear-left": {
+            "ear-left": {
+              "x": 42.46,
+              "y": -3.9,
+              "rotation": -35,
+              "width": 138,
+              "height": 146,
+              "path": "aquatic-06.ear-left"
+            }
+          }
+        }
+      }
+    ],
+    "ik": [
+      {
+        "name": "leg-back-left-IK",
+        "order": 2,
+        "bones": [
+          "@leg-back-left"
+        ],
+        "target": "leg-back-left-IK"
+      },
+      {
+        "name": "leg-front-left-IK",
+        "order": 1,
+        "bones": [
+          "@leg-front-left"
+        ],
+        "target": "leg-front-left-IK"
+      },
+      {
+        "name": "leg-front-right-IK",
+        "bones": [
+          "@leg-front-right"
+        ],
+        "target": "leg-front-right-IK"
+      }
+    ],
+    "events": {
+      "hit": {},
+      "hit-buff": {},
+      "jump": {},
+      "start-attack": {}
+    },
+    "animations": {}
+}

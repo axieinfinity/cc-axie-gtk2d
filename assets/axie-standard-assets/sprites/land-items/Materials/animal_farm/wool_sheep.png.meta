@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "60aab1b0-5808-479b-9c2d-4fa9a899733c",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "60aab1b0-5808-479b-9c2d-4fa9a899733c@6c48a",
+      "displayName": "wool_sheep",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "60aab1b0-5808-479b-9c2d-4fa9a899733c",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "60aab1b0-5808-479b-9c2d-4fa9a899733c@f9941",
+      "displayName": "wool_sheep",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 24,
+        "trimY": 59,
+        "width": 464,
+        "height": 394,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -232,
+            -197,
+            0,
+            232,
+            -197,
+            0,
+            -232,
+            197,
+            0,
+            232,
+            197,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            24,
+            453,
+            488,
+            453,
+            24,
+            59,
+            488,
+            59
+          ],
+          "nuv": [
+            0.046875,
+            0.115234375,
+            0.953125,
+            0.115234375,
+            0.046875,
+            0.884765625,
+            0.953125,
+            0.884765625
+          ],
+          "minPos": [
+            -232,
+            -197,
+            0
+          ],
+          "maxPos": [
+            232,
+            197,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "60aab1b0-5808-479b-9c2d-4fa9a899733c@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "60aab1b0-5808-479b-9c2d-4fa9a899733c@f9941"
+  }
+}

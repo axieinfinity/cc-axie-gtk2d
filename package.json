@@ -1,0 +1,10 @@
+{
+  "name": "cc-axie-gtk2d",
+  "uuid": "acaef04f-c0e4-4368-9992-fcc2211311a7",
+  "creator": {
+    "version": "3.7.1"
+  },
+  "dependencies": {
+    "bn.js": "^5.2.1"
+  }
+}

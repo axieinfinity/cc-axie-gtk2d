@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38@6c48a",
+      "displayName": "gold_amethyst_necklace",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38@f9941",
+      "displayName": "gold_amethyst_necklace",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 10,
+        "offsetY": 47.5,
+        "trimX": 32,
+        "trimY": 0,
+        "width": 468,
+        "height": 417,
+        "rawWidth": 512,
+        "rawHeight": 512,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -234,
+            -208.5,
+            0,
+            234,
+            -208.5,
+            0,
+            -234,
+            208.5,
+            0,
+            234,
+            208.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            32,
+            512,
+            500,
+            512,
+            32,
+            95,
+            500,
+            95
+          ],
+          "nuv": [
+            0.0625,
+            0.185546875,
+            0.9765625,
+            0.185546875,
+            0.0625,
+            1,
+            0.9765625,
+            1
+          ],
+          "minPos": [
+            -234,
+            -208.5,
+            0
+          ],
+          "maxPos": [
+            234,
+            208.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "c1ca191c-3176-4e5a-a3d2-70a231ddfa38@f9941"
+  }
+}
